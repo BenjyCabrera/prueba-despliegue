@@ -7,9 +7,9 @@ const mongoose = require ('mongoose')
 const {engine} = require('express-handlebars');
 
 ////////RUTAS////////
-const users = require ('./routes/users')
-const news = require('./routes/news')
-const comments = require ('./routes/comments')
+const users = require ('./src/routes/users')
+const news = require('./src/routes/news')
+const comments = require ('./src/routes/comments')
 // const albums = require ('./routes/albums')
 
 mongoose.connect(process.env.MONGO_URI)
